@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sketch-pad {
+    width: 600px;
+    height: 600px;
+}
+
+.pixel {
+    background-color: red;
+    width: 37.5px;
+    height: 37.5px;
+    border: 0px;
+    margin: 0px;
+}
