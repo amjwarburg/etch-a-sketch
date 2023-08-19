@@ -39,3 +39,11 @@ button.canvas {
     font-size: 30px;
     margin-top: 50px;
 }
+
+.sketch-pad-2 {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    outline: 1px black solid;
+    margin-bottom: 150px
+}

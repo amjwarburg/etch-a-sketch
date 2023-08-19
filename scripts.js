@@ -1,4 +1,7 @@
 let pad = document.querySelector('.sketch-pad')
+let button = document.querySelector('.canvas')
+let container = document.querySelector('.container')
+
 
 function createPixels(num) {
     for (let rows = 0; rows < num; rows++) {
@@ -17,17 +20,23 @@ function createPixels(num) {
             columns.addEventListener('mouseenter', () => {
             columns.style.backgroundColor = `rgb(${Math.random()*256}, ${Math.random()*256}, ${Math.random()*256})`
         });
-        pad.appendChild(rows)
-     }
+            
   }
 }
+}
 
-let rows = document.querySelector('.rows')
-let button = document.querySelector('.canvas')
-let container = document.querySelector('.container')
 button.addEventListener('click', () => { 
-    let num = prompt('Enter a size for the grid 10-100')
-    createPixels(num);
+    let num = prompt('Enter a size for the grid 10-100');
+    if (prompt && parseInt(num) <= 100) {
+    let newPad = document.createElement('div');
+    newPad.classList.add('.sketch-pad-2');
+    container.appendChild(newPad);
+    pad.innerHTML = '';
+    createPixels(num)
+    };
 })
 
+
+
 createPixels(16)
+
