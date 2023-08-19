@@ -8,12 +8,20 @@
 .sketch-pad {
     width: 600px;
     height: 600px;
+    display: flex;
 }
 
-.pixel {
-    background-color: red;
-    width: 37.5px;
-    height: 37.5px;
-    border: 0px;
+.columns {
+    border: none;
+    outline: 1px black solid;
     margin: 0px;
+    
+    
+}
+
+.rows {
+    border: none;
+    outline: 1px black solid;
+    margin: 0px;
+   
 }
